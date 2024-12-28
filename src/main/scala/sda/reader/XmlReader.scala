@@ -2,8 +2,9 @@ package sda.reader
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 case class XmlReader(path: String,
-                     delimiter: Option[String] = None,
-                     header:Option[Boolean] = None
+                     rootTag: Option[String] = None,
+                     rowTag: Option[String]= None,
+                     multiline: Option[Boolean] = None
 
                     )
   extends Reader {
@@ -12,8 +13,9 @@ case class XmlReader(path: String,
   def read()(implicit  spark: SparkSession): DataFrame = {
 
     spark.read.format(format)
-      .option("delimiter", delimiter.getOrElse(","))
-      .option("header", header.getOrElse(true))
+      .option("rootTag", "Clients")
+      .option("rowTag", "Client")
+      .option("multiline", "true")
       .load(path)
 
   }
