@@ -18,5 +18,13 @@ object ConfigurationParser {
     JsonMethods.parse(FileReaderUsingIOSource.getContent(jsonString)).extract[XmlReader]
   }
 
+  /* Complétez cette fonction. Elle prend un String  en argument et renvoie un objet JsonReader.
+     Elle doit être codée de la même manière que la fonction  getCsvReaderConfigurationFromJson
+
+  def getJsonReaderConfigurationFromJson(jsonString: String): JsonReader = {
+  ................................................................
+  }
+   */
+
 }
 

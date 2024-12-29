@@ -17,6 +17,5 @@ case class XmlReader(path: String,
       .option("rowTag", "Client")
       .option("multiline", "true")
       .load(path)
-
   }
 }

@@ -12,7 +12,7 @@
                 <Date_End_contrat>2024-12-23 00:00:00</Date_End_contrat>
                 <TypeProd>Laitier</TypeProd>
                 <produit>yaourt</produit>
-                <produit>laitcoco</produit>
+                <produit>laitvanille</produit>
             </MetaTransaction>
         </MetaData>
     </Client>
@@ -28,7 +28,7 @@
                 <Date_End_contrat>2024-12-23 00:00:00</Date_End_contrat>
                 <TypeProd>Boison</TypeProd>
                 <produit>coca</produit>
-                <produit>fanta</produit>
+                <produit>oasis</produit>
             </MetaTransaction>
         </MetaData>
     </Client>

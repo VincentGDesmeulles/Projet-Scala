@@ -1,4 +1,6 @@
 {
   "path": "src/main/resources/DataforTest/data.xml",
+  "rootTag": "Clients",
+  "rowTag": "Client",
   "multiline": true
 }
