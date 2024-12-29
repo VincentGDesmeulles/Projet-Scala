@@ -40,11 +40,6 @@ object ServiceVente {
       /*..........................coder ici...............................*/
       dataFrame.withColumn("Contrat_Status", when(to_date(col("Date_End_contrat"), "yyyy-MM-dd") < current_date(), "Expired").otherwise("Actif"))
     }
-    def testttc(): Unit = {
-      dataFrame.select("HTT", "TVA").show()
-      dataFrame.filter(col("HTT").isNull || col("TVA").isNull).show()
-      dataFrame.printSchema()
-    }
 
   }
 

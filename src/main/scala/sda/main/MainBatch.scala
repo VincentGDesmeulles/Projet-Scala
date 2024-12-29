@@ -32,7 +32,5 @@ object MainBatch {
     df.calculTTC.extractDateEndContratVille.show
     println("***********************Resultat Question4*****************************")
     df.calculTTC.extractDateEndContratVille.contratStatus.show(20)
-    println("***********************Test*****************************")
-    df.testttc()
   }
 }
